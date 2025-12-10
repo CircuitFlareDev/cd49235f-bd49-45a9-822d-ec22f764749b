@@ -27,7 +27,6 @@
     }
 
     .btn {
-      background-color: #ff6b6b;
       border: none;
       padding: 15px 30px;
       font-size: 18px;
@@ -38,16 +37,29 @@
       transition: transform 0.2s, background-color 0.2s;
     }
 
-    .btn:hover {
+    .btn-price {
+      background-color: #ff6b6b;
+    }
+    .btn-price:hover {
+      background-color: #ff4757;
       transform: scale(1.05);
     }
 
-    .btn1:hover {
-      background-color: #ff4757;
+    .btn-smp {
+      background-color: #1dd1a1;
+    }
+    .btn-smp:hover {
+      background-color: #10ac84;
+      transform: scale(1.05);
     }
 
-    .btn2:hover {
-      background-color: #1dd1a1;
+    .btn-rank {
+      background-color: #feca57;
+      color: #1e1e1e;
+    }
+    .btn-rank:hover {
+      background-color: #ff9f43;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -56,12 +68,16 @@
   <h1>Welcome to PhaseZero SMP</h1>
   <p>Choose where you want to go:</p>
 
-  <button class="btn btn1" onclick="window.location.href='https://phasezero.odoo.com/pricing-plans'">
-    Pricing Plans
+  <button class="btn btn-price" onclick="window.location.href='https://phasezero.odoo.com/pricing-plans'">
+    Price
   </button>
 
-  <button class="btn btn2" onclick="window.location.href='https://circuitflaredev.github.io/WebSite-SMP/'">
+  <button class="btn btn-smp" onclick="window.location.href='https://circuitflaredev.github.io/WebSite-SMP/'">
     SMP Website
+  </button>
+
+  <button class="btn btn-rank" onclick="window.location.href='https://circuitflaredev.github.io/RankPriceSMP/'">
+    RankPriceSMP
   </button>
 
 </body>
